@@ -1,7 +1,6 @@
 import importlib
 from manufacturers.config import MANUFACTURERS_DATA # Import the detailed config
 
-# import_dict = {} # We might not need this if we instantiate directly
 product_dict = {}
 
 def main():
@@ -47,6 +46,22 @@ def main():
             print(f"Error: Could not instantiate class '{class_name}'. Check __init__ arguments: {te}")
         except Exception as e:
             print(f"An unexpected error occurred while processing {manufacturer_key}: {e}")
+
+        try:
+            for manu, products in product_dict.items():
+                if products:
+                    for product in products.items():
+                        print(f"  {product}")
+                        # Call the method on the instance
+                        product_data = scraper_instance.get_product_data(product)
+                        if product_data:
+                            print(f"Retrieved {product_data}")
+                        else:
+                            print(f"No product data retrieved for {product[0]}")
+                else:
+                    print(f"\n{manu.capitalize()}: No URLs found.")
+        except Exception as e:
+            print(f"An error occurred while printing product URLs: {e}")
 
     print("\n--- All Product URLs ---")
     for manu, products in product_dict.items():

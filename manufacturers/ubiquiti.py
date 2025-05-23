@@ -125,7 +125,7 @@ class Ubiquiti:
 
         return generated_product_urls
 
-    def get_product_data(self) -> dict:
+    def get_product_data(self, product) -> dict:
         """
         Placeholder for a method to fetch product data from the generated URLs.
         This method can be implemented later as needed.
