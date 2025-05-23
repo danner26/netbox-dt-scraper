@@ -49,11 +49,12 @@ def main():
             print(f"An unexpected error occurred while processing {manufacturer_key}: {e}")
 
     print("\n--- All Product URLs ---")
-    for manu, urls in product_dict.items():
-        if urls:
+    for manu, products in product_dict.items():
+        if products:
             print(f"\n{manu.capitalize()}:")
-            for url in urls:
-                print(f"  {url}")
+
+            for product, data in products.items():
+                print(f"  {data['url']}")
         else:
             print(f"\n{manu.capitalize()}: No URLs found.")
 

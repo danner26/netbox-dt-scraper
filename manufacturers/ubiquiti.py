@@ -88,7 +88,7 @@ class Ubiquiti:
         Uses instance's device_info_urls.
         Returns a list of product URLs.
         """
-        generated_product_urls = []
+        generated_product_urls = {}
 
         if not self.device_info_urls:
             print(f"No DEVICE_INFO_URLS found for {self.manufacturer_name} to process.")
@@ -112,7 +112,7 @@ class Ubiquiti:
                     print(f"--- Generating product URLs for {len(slug_list)} slugs from {category_url} ---")
                     for slug in slug_list:
                         clean_slug = slug.lstrip('/')
-                        generated_product_urls.append(f"{base_url_for_products}/{clean_slug}.json")
+                        generated_product_urls[slug] = {"url": f"{base_url_for_products}/{clean_slug}.json"}
                 else:
                     print(f"No product slugs extracted from {category_url}.")
             else:
@@ -124,6 +124,14 @@ class Ubiquiti:
             print(f"\n--- No Product URLs Were Generated Overall for {self.manufacturer_name} ---")
 
         return generated_product_urls
+
+    def get_product_data(self) -> dict:
+        """
+        Placeholder for a method to fetch product data from the generated URLs.
+        This method can be implemented later as needed.
+        """
+        print("get_product_data() method is not yet implemented.")
+        return {}
 
 # Example of how to use the class if this script is run directly
 if __name__ == "__main__":
