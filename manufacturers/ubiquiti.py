@@ -1,4 +1,5 @@
 import requests
+import re
 import json
 
 # Assuming DEVICE_INFO_URLS and MANUFACTURER will be passed to the class instance
@@ -141,6 +142,57 @@ class Ubiquiti:
                 return default
         return current
 
+    def _transform(self, transform_func, value):
+        """
+        Applies a transformation function to a value.
+        :param transform_func: The transformation function to apply.
+        :param value: The value to transform.
+        :return: The transformed value.
+        """
+        print(f"Applying transformation function: {transform_func} to value: {value}")
+        if transform_func == "weight_transform": # Use '==' for string comparison
+            # Example transformation function for weight
+            if isinstance(value, str):
+                split_value = value.split()
+                # Assuming the value is a string like "5 kg (10.9 lb)"
+                try:
+                    weight_kg = float(split_value[0])  # Extract the numeric part
+                    # Ensure there are enough parts for lbs, and handle potential missing 'lb'
+                    weight_lbs_str = "0"
+                    for part in split_value:
+                        if 'lb' in part:
+                            weight_lbs_str = part.replace('(', '').replace('lb', '').replace(')', '').strip()
+                            break
+                    weight_lbs = float(weight_lbs_str)
+                    return {"kg": weight_kg, "lbs": weight_lbs}
+                except (ValueError, IndexError) as e:
+                    print(f"Warning: Could not convert weight value '{value}': {e}")
+                    return value # Return original value or a specific error indicator
+        elif transform_func == "u_height_transform": # Use '==' for string comparison
+            if isinstance(value, str):
+                # Try to find a pattern like "1U", "2U", etc., possibly within parentheses
+                match = re.search(r'(\d+)\s*U', value, re.IGNORECASE) # Case-insensitive search for "U"
+                if match:
+                    try:
+                        u_height = int(match.group(1))
+                        print(f"Transformed U height value: {u_height} from '{value}'")
+                        return u_height
+                    except ValueError:
+                        print(f"Warning: Could not convert extracted U height '{match.group(1)}' to int from '{value}'.")
+                        return 0 # Default to 0 if conversion fails after match
+                else:
+                    # If no "XU" pattern is found, assume it's not standard rack U height (e.g., "Compact Desktop")
+                    print(f"No U height pattern found in '{value}'. Assuming 0U.")
+                    return 0 # Default to 0 if no U pattern
+            else:
+                # If the value isn't a string, it's unlikely to be a U height description
+                print(f"Value '{value}' is not a string. Assuming 0U for U height.")
+                return 0 # Default to 0 if not a string
+
+        # If no specific transformation matches, return the original value
+        print(f"No specific transformation for '{transform_func}'. Returning original value: {value}")
+        return value
+
     def parse_product_data(self, data_to_populate: dict, product_json_data: dict) -> dict:
         """
         Parses product_json_data based on self.data_points and populates data_to_populate.
@@ -160,6 +212,7 @@ class Ubiquiti:
 
         for dp_config in self.data_points:
             output_key = dp_config.get("output_key")
+            transform = dp_config.get("transform") # Optional transformation function
             dp_type = dp_config.get("type", "direct_path") # Default to direct_path
             default_value = dp_config.get("default") # Will be None if not specified
 
@@ -218,7 +271,11 @@ class Ubiquiti:
             else:
                 print(f"Warning: Unknown data point type '{dp_type}' for '{output_key}'.")
 
-            if
+            if transform is not None:
+                try:
+                    value_to_assign = self._transform(transform, value_to_assign)
+                except Exception as e:
+                    print(f"Error applying transform function for '{output_key}': {e}")
 
             data_to_populate[output_key] = value_to_assign
 

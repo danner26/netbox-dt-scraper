@@ -31,14 +31,14 @@ MANUFACTURERS_DATA = {
                 "output_key": "weight",
                 "type": "technical_spec", # Custom type for technical specifications
                 "spec_slug": "weight",    # The slug to look for (e.g., "weight", "dimensions")
-                "transform": None,
+                "transform": "weight_transform", # Transformation function name
                 "default": None
             },
             {
                 "output_key": "u_height",
                 "type": "technical_spec", # Custom type for technical specifications
                 "spec_slug": "form-factor",    # The slug to look for (e.g., "weight", "dimensions")
-                "transform": None,
+                "transform": "u_height_transform", # Transformation function name
                 "default": None
             }
         ]
