@@ -6,8 +6,41 @@ MANUFACTURERS_DATA = {
             "https://techspecs.ui.com/_next/data/EAllru7-KUKtVLnVBqKwQ/unifi/cloud-gateways.json"
         ],
         "data_points": [
-            "title",
-            "shortDescription"
+            {
+                "output_key": "title", # The key name in the final parsed dictionary
+                "type": "direct_path", # Type of data extraction
+                "path": ["title"],     # Path relative to product_json_data['pageProps']['product']
+                "transform": None,     # Optional transformation function
+                "default": None        # Optional default value if path not found
+            },
+            {
+                "output_key": "short_description",
+                "type": "direct_path",
+                "path": ["shortDescription"],
+                "transform": None,
+                "default": None
+            },
+            {
+                "output_key": "product_name", # Example: UDM-SE
+                "type": "direct_path",
+                "path": ["name"],
+                "transform": None,
+                "default": None
+            },
+            {
+                "output_key": "weight",
+                "type": "technical_spec", # Custom type for technical specifications
+                "spec_slug": "weight",    # The slug to look for (e.g., "weight", "dimensions")
+                "transform": None,
+                "default": None
+            },
+            {
+                "output_key": "u_height",
+                "type": "technical_spec", # Custom type for technical specifications
+                "spec_slug": "form-factor",    # The slug to look for (e.g., "weight", "dimensions")
+                "transform": None,
+                "default": None
+            }
         ]
     },
 }

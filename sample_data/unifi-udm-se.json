@@ -1,0 +1,1579 @@
+{
+  "pageProps": {
+    "referer": null,
+    "productLine": "Unifi",
+    "category": "cloud-gateways",
+    "product": {
+      "__typename": "StorefrontProduct",
+      "slug": "udm-se",
+      "collectionSlug": "unifi-dream-machine",
+      "proCollectionSlug": null,
+      "organizationalCollectionSlug": null,
+      "title": "Dream Machine Special Edition",
+      "shortTitle": "Dream Machine Special Edition",
+      "shortDescription": "10G Cloud Gateway with 100+ UniFi device / 1,000+ client support, 3.5 Gbps IPS routing, and built-in PoE switching.",
+      "name": "UDM-SE",
+      "id": "1b6fcc08-a6b8-4496-a831-6125a47c412f",
+      "thumbnail": {
+        "__typename": "Asset",
+        "id": "148125d6-5d75-44f5-b106-18f5fedf7c7f",
+        "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/148125d6-5d75-44f5-b106-18f5fedf7c7f.png",
+        "width": 1500,
+        "height": 1501
+      },
+      "variants": [
+        {
+          "__typename": "StorefrontProductVariant",
+          "sku": "UDM-SE"
+        }
+      ],
+      "whatsInTheBoxMedia": {
+        "__typename": "Gallery",
+        "id": "c615cb1a-ffb4-4c4c-85b1-989d2c9edb66:ProductWhatsInTheBox",
+        "items": [
+          {
+            "__typename": "GalleryItem",
+            "id": "c615cb1a-ffb4-4c4c-85b1-989d2c9edb66",
+            "data": {
+              "__typename": "Asset",
+              "id": "2794bdc2-2d4a-4996-9194-2e3436d38edd",
+              "mimeType": "image/png",
+              "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/2794bdc2-2d4a-4996-9194-2e3436d38edd.png",
+              "height": 1198,
+              "width": 1960
+            }
+          }
+        ],
+        "type": "ProductWhatsInTheBox"
+      },
+      "gallery": {
+        "__typename": "Gallery",
+        "id": "8eef72b7-22d4-4a45-92e7-4e3df98f081a:ProductMedia",
+        "items": [
+          {
+            "__typename": "GalleryItem",
+            "id": "8eef72b7-22d4-4a45-92e7-4e3df98f081a",
+            "data": {
+              "__typename": "Asset",
+              "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/148125d6-5d75-44f5-b106-18f5fedf7c7f.png",
+              "height": 1501,
+              "width": 1500,
+              "mimeType": "image/png",
+              "filename": "148125d6-5d75-44f5-b106-18f5fedf7c7f.png"
+            }
+          },
+          {
+            "__typename": "GalleryItem",
+            "id": "7c76db37-3e23-4b2b-ab58-bc10be5bdd2d",
+            "data": {
+              "__typename": "Asset",
+              "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/88f86975-1ce9-4b0b-9264-c37953708057.png",
+              "height": 1500,
+              "width": 1500,
+              "mimeType": "image/png",
+              "filename": "88f86975-1ce9-4b0b-9264-c37953708057.png"
+            }
+          },
+          {
+            "__typename": "GalleryItem",
+            "id": "4cb69180-b32a-4e9e-9827-e590162464fa",
+            "data": {
+              "__typename": "Asset",
+              "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/73d3a408-d5bd-41cd-b3e3-2be35930b845.png",
+              "height": 1500,
+              "width": 1500,
+              "mimeType": "image/png",
+              "filename": "73d3a408-d5bd-41cd-b3e3-2be35930b845.png"
+            }
+          },
+          {
+            "__typename": "GalleryItem",
+            "id": "ef036311-b1bd-466e-b905-8efeebdb883d",
+            "data": {
+              "__typename": "Asset",
+              "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/620e3ad6-89c7-459a-b757-7e52227cded9.png",
+              "height": 1500,
+              "width": 1500,
+              "mimeType": "image/png",
+              "filename": "620e3ad6-89c7-459a-b757-7e52227cded9.png"
+            }
+          },
+          {
+            "__typename": "GalleryItem",
+            "id": "408f8b41-209d-475d-a675-1857e30f01b1",
+            "data": {
+              "__typename": "Asset",
+              "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/95a2e25c-fd53-4cb1-bf4d-506f08ab1b54.png",
+              "height": 1500,
+              "width": 1500,
+              "mimeType": "image/png",
+              "filename": "95a2e25c-fd53-4cb1-bf4d-506f08ab1b54.png"
+            }
+          },
+          {
+            "__typename": "GalleryItem",
+            "id": "c9f0780d-44b7-4f72-8d9d-98b6029a815c",
+            "data": {
+              "__typename": "Asset",
+              "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/72e59662-e1db-4a63-94fa-67d289fbd8ed.png",
+              "height": 1500,
+              "width": 1500,
+              "mimeType": "image/png",
+              "filename": "72e59662-e1db-4a63-94fa-67d289fbd8ed.png"
+            }
+          },
+          {
+            "__typename": "GalleryItem",
+            "id": "6efe792a-766c-4d71-a4f7-7d5214265cc3",
+            "data": {
+              "__typename": "Asset",
+              "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/cdc54832-8a39-4b95-ac0c-c2c9211587e9.png",
+              "height": 1500,
+              "width": 1500,
+              "mimeType": "image/png",
+              "filename": "cdc54832-8a39-4b95-ac0c-c2c9211587e9.png"
+            }
+          },
+          {
+            "__typename": "GalleryItem",
+            "id": "77dbdaa8-e9d7-4db7-a378-9eb09ba9f02f",
+            "data": {
+              "__typename": "Asset",
+              "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/5c94e153-ac3f-408b-a8d1-636a1d899335.mp4",
+              "height": 1200,
+              "width": 1200,
+              "mimeType": "video/mp4",
+              "filename": "5c94e153-ac3f-408b-a8d1-636a1d899335.mp4"
+            }
+          }
+        ],
+        "type": "ProductMedia"
+      },
+      "techSpecs": {
+        "__typename": "Gallery",
+        "id": "6371cfc3-a7ab-4a6e-99e4-6b34187903a2:ProductTechSpec",
+        "items": [
+          {
+            "__typename": "GalleryItem",
+            "id": "6371cfc3-a7ab-4a6e-99e4-6b34187903a2",
+            "data": {
+              "__typename": "Asset",
+              "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/c1d1e0e0-4ec6-4760-9bc2-81cdfdf3eaa5.png",
+              "height": 880,
+              "width": 1400,
+              "mimeType": "image/png",
+              "filename": "c1d1e0e0-4ec6-4760-9bc2-81cdfdf3eaa5.png"
+            }
+          },
+          {
+            "__typename": "GalleryItem",
+            "id": "24b6dc69-93d4-41c2-bb02-3301b19ca2f7",
+            "data": {
+              "__typename": "Asset",
+              "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/522e6fc0-1cb4-4b32-afd5-2495c26625fc.png",
+              "height": 359,
+              "width": 1400,
+              "mimeType": "image/png",
+              "filename": "522e6fc0-1cb4-4b32-afd5-2495c26625fc.png"
+            }
+          }
+        ],
+        "type": "ProductTechSpec"
+      },
+      "deploymentMedia": {
+        "__typename": "Gallery",
+        "id": "e4a2b6b1-7692-467b-8b28-baff1d853750:ProductDeployment",
+        "items": [
+          {
+            "__typename": "GalleryItem",
+            "id": "e4a2b6b1-7692-467b-8b28-baff1d853750",
+            "data": {
+              "__typename": "Asset",
+              "id": "e3814942-b507-4de4-86b9-c1f1b93b71eb",
+              "mimeType": "video/mp4",
+              "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/e3814942-b507-4de4-86b9-c1f1b93b71eb.mp4",
+              "height": 720,
+              "width": 1280,
+              "childAssets": [
+                {
+                  "__typename": "Asset",
+                  "id": "be7bdaed-d120-4088-b22f-a146d5e532f2",
+                  "mimeType": "image/png",
+                  "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/be7bdaed-d120-4088-b22f-a146d5e532f2.png",
+                  "height": 720,
+                  "width": 1280
+                },
+                {
+                  "__typename": "Asset",
+                  "id": "2973691a-fef5-4874-ada2-9d4aa2fc46cd",
+                  "mimeType": "video/mp4",
+                  "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/2973691a-fef5-4874-ada2-9d4aa2fc46cd.mp4",
+                  "height": 720,
+                  "width": 1280
+                }
+              ]
+            }
+          },
+          {
+            "__typename": "GalleryItem",
+            "id": "b5e170a7-abea-417e-a728-c72e6fae8b3d",
+            "data": {
+              "__typename": "Asset",
+              "id": "9eac9052-124b-4bfa-9e9f-a19f803d2f9a",
+              "mimeType": "image/png",
+              "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/9eac9052-124b-4bfa-9e9f-a19f803d2f9a.png",
+              "height": 700,
+              "width": 788,
+              "childAssets": []
+            }
+          },
+          {
+            "__typename": "GalleryItem",
+            "id": "f75e1f70-015e-4f3c-9ded-4d933659a90e",
+            "data": {
+              "__typename": "Asset",
+              "id": "d7a01b05-6a80-410d-9989-2a5190cbf060",
+              "mimeType": "image/png",
+              "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/d7a01b05-6a80-410d-9989-2a5190cbf060.png",
+              "height": 700,
+              "width": 1130,
+              "childAssets": []
+            }
+          }
+        ],
+        "type": "ProductDeployment"
+      },
+      "topologyMedia": {
+        "__typename": "Gallery",
+        "id": "96235a2d-77ad-4159-bcc9-25f7b52f63ee:ProductTopology",
+        "items": [
+          {
+            "__typename": "GalleryItem",
+            "id": "96235a2d-77ad-4159-bcc9-25f7b52f63ee",
+            "data": {
+              "__typename": "Asset",
+              "url": "https://cdn.ecomm.ui.com/products/1b6fcc08-a6b8-4496-a831-6125a47c412f/ba13e628-0e59-4993-b8e4-4a7835c787d9.png",
+              "height": 1020,
+              "width": 1780,
+              "mimeType": "image/png",
+              "filename": "ba13e628-0e59-4993-b8e4-4a7835c787d9.png"
+            }
+          }
+        ],
+        "type": "ProductTopology"
+      },
+      "technicalSpecification": {
+        "__typename": "SpecificationEntity",
+        "id": "d09c7953-b1c7-5928-b09f-33354f091ece",
+        "sections": [
+          {
+            "__typename": "SpecificationEntitySection",
+            "id": "d2f1e274-b7ac-554c-ab77-9e87bbf5e8f8",
+            "section": {
+              "__typename": "SpecificationSection",
+              "id": "2221df80-d075-483e-a7da-3211e6606a0e",
+              "label": "Overview",
+              "slug": "overview"
+            },
+            "features": [
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "aba32d05-d4bc-5a8e-bfbd-9ba7536a48db",
+                "note": null,
+                "value": "442.4 x 43.7 x 285.6 mm\n(17.4 x 1.7 x 11.2\")",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "bfd624c6-ca46-4755-88e9-fe7a6f82b25c",
+                  "label": "Dimensions",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "dimensions"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureGroup",
+                "id": "ad4ccb9f-be31-5599-847b-6c977218d9d6",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "b9c9bc2f-448b-4488-8bf6-9e17e1924d98",
+                  "label": "UniFi Application Suite",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "unifi-application-suite"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "d01d542e-5296-513c-943e-c40121d7e819",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "869ba8f2-ef87-4b16-a9b4-93b3085c71b0",
+                  "label": "Network",
+                  "note": "Powerful gateways, WiFi access points, and switches enabling next-gen security and scalable SD-WAN.",
+                  "parentId": "b9c9bc2f-448b-4488-8bf6-9e17e1924d98",
+                  "slug": "unifi-application-suite-network"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "81153485-ebb9-52fd-b934-a3bbf39bfc1f",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "d5ef0d65-7854-4a0e-9be3-2cf7ce10434b",
+                  "label": "Protect",
+                  "note": "Al-powered camera system with flexible alarm integrations, and smart detections for streamlined incident management.",
+                  "parentId": "b9c9bc2f-448b-4488-8bf6-9e17e1924d98",
+                  "slug": "unifi-application-suite-protect"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "4f940204-2f2a-50f1-8d18-9bb8207f42da",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "787a86b0-ff90-4c8e-b423-09fc5df50a1e",
+                  "label": "Access",
+                  "note": "Secure Ethernet-based access control for doors, gates, and elevators, featuring flexible unlock mechanisms.",
+                  "parentId": "b9c9bc2f-448b-4488-8bf6-9e17e1924d98",
+                  "slug": "unifi-application-suite-access"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "337400a6-a62d-5e5d-8767-c06ebf5c85f0",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "3f82fdf1-35b7-4e65-a73e-15ec5711d56a",
+                  "label": "Talk",
+                  "note": "Plug-and-play VolP system with advanced call routing and automations for seamless communication.",
+                  "parentId": "b9c9bc2f-448b-4488-8bf6-9e17e1924d98",
+                  "slug": "unifi-application-suite-talk"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "6793b02a-172e-5c31-8677-0785fbfc79ea",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "730fb086-e5a7-4396-8a42-5ce9d3963710",
+                  "label": "Connect",
+                  "note": "Manage digital signage, EV chargers, and Lutron lighting systems with ease.",
+                  "parentId": "b9c9bc2f-448b-4488-8bf6-9e17e1924d98",
+                  "slug": "unifi-application-suite-connect"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "b6d6319c-20bf-58ab-9ec2-88bd28856b7d",
+                "note": null,
+                "value": "100+",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "07cb79e0-307a-41c5-b693-f383c698ae89",
+                  "label": "Managed UniFi Devices",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "managed-unifi-devices"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "4588d2b0-1c7a-52f2-94f8-d0168b86394e",
+                "note": null,
+                "value": "(24) HD\n(14) 2K\n(8) 4K",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "cf646dcf-a57a-4f19-81b4-c67c4fe917e4",
+                  "label": "Managed Cameras",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "managed-cameras"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "773682e6-d6d3-52c5-9745-7c377e5fab3e",
+                "note": null,
+                "value": "1,000+",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "11d1014a-b4db-4ace-824b-664b974df332",
+                  "label": "Simultaneous Users Connected",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "simultaneous-users-connected"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "521d4459-1016-51d4-9aa4-a6a7240a0f4b",
+                "note": null,
+                "value": "8",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "96332125-9242-4aec-b413-870416cd62b3",
+                  "label": "Max. WAN Port Count",
+                  "note": "",
+                  "parentId": null,
+                  "slug": "maxdot-wan-port-count"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "7164e01f-3335-5558-a33c-59362a1a2064",
+                "note": null,
+                "value": "(1) 10G SFP+\n(1) 2.5 GbE RJ45",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "b5bbcbea-3081-4d4f-971f-615031fb752d",
+                  "label": "Default WAN Ports",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "default-wan-ports"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureGroup",
+                "id": "4c96b68a-c41f-5117-9e6d-38a9ddbf04d8",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "ed270b08-d796-46a5-ba3b-b266d0447345",
+                  "label": "Port Layout",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "port-layout"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "5058c288-1ba7-5417-81d5-c4ec0fa706dc",
+                "note": null,
+                "value": "8\n(1G/100M/10M)",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "e18a5959-5c5d-49f6-b467-07b78070a959",
+                  "label": "1 GbE RJ45",
+                  "note": null,
+                  "parentId": "ed270b08-d796-46a5-ba3b-b266d0447345",
+                  "slug": "port-layout-1-gbe-rj45"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "308eafa8-17f8-551a-a300-db3fda87e008",
+                "note": null,
+                "value": "1\n(2.5G/1G/100M/10M)",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "85d932e9-953c-476f-b63f-9e55226e90a2",
+                  "label": "2.5 GbE RJ45",
+                  "note": null,
+                  "parentId": "ed270b08-d796-46a5-ba3b-b266d0447345",
+                  "slug": "port-layout-2dot5-gbe-rj45"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "94c886a5-efc9-5caa-a882-950c22053eb9",
+                "note": null,
+                "value": "2\n(10G/1G)",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "d2687ed2-52af-4b71-a34f-dfefa04a8b84",
+                  "label": "10G SFP+",
+                  "note": null,
+                  "parentId": "ed270b08-d796-46a5-ba3b-b266d0447345",
+                  "slug": "port-layout-10g-sfpplus"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "ea63bac7-b439-5b03-ae2f-240677dd29e3",
+                "note": null,
+                "value": "3.5 Gbps",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "861803a5-938e-4e6f-b811-ff4e54ec2448",
+                  "label": "IDS/IPS Throughput",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "idsslaships-throughput"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "cf2039c2-95be-5a2a-afda-7f0d3aa2ec97",
+                "note": null,
+                "value": "Rack mount (1U)",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "00e89808-0332-42a9-be8c-ce6888670cc5",
+                  "label": "Form Factor",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "form-factor"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "06517e71-36d4-5aa5-bd28-01c3e1bcaaa3",
+                "note": "Enable DC power backup using UniFi RPS",
+                "value": "Shadow Mode (VRRP) Gateway Failover\nDC Power Backup",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "65142e49-91bf-4fb3-9b9d-f341f9f2b153",
+                  "label": "Redundancy",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "redundancy"
+                }
+              }
+            ]
+          },
+          {
+            "__typename": "SpecificationEntitySection",
+            "id": "6a639897-17a6-539b-b66a-8dddb72d27ba",
+            "section": {
+              "__typename": "SpecificationSection",
+              "id": "3dc95b10-e1d2-41c2-8f41-c5f3e275304a",
+              "label": "Security",
+              "slug": "security"
+            },
+            "features": [
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "31862708-42a1-5524-995c-d7427b6ac3bb",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "1a627219-5ba9-4465-b601-7fa3aae53350",
+                  "label": "Stateful Firewall",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "stateful-firewall"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "e868a58c-7ba9-5d27-bf3d-b670cb69ef04",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "7995fe06-feb7-4b2d-a7b1-f97978f8d964",
+                  "label": "Application-Aware Layer 7 Firewall",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "application-aware-layer-7-firewall"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "63489f34-4b4e-560f-b996-74e6f2a33e30",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "c430712c-4a6b-4468-b44d-28e0c6037a63",
+                  "label": "DPI & Traffic Identification",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "dpi-and-traffic-identification"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "942977ab-78ec-5786-938e-e96e6c402663",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "2785ba79-15ca-4c49-af5d-8bf2e7c8d674",
+                  "label": "Zone-Based Firewall Advanced Filtering (Regions, Domains, Apps)",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "zone-based-firewall-advanced-filtering-regions-domains-apps"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "b1794a58-a8f2-5715-8d2a-3f2dfca1eef2",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "2363e73f-391f-4f15-8b47-bf050699d86f",
+                  "label": "Content Filtering",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "content-filtering"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "7c7224ed-c9b8-53c0-a42d-1af0f62e9b43",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "106de3f5-dac4-440d-92d8-5a8e55485bf2",
+                  "label": "Intrusion Prevention (IPS/IDS)",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "intrusion-prevention-ipsslashids"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "4bc59286-80bc-55c4-aa32-18925cc828ee",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "34ec10de-f3cc-4fde-87bd-6c2ba07bb5f7",
+                  "label": "Ad Blocking",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "ad-blocking"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "a50a7e6d-3c1e-583e-b828-f571de30db08",
+                "note": null,
+                "value": "55,000+\nwith CyberSecure",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "74a93503-7aec-4ecd-82eb-fac72394ec82",
+                  "label": "IDS/IPS Signatures",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "idsslaships-signatures"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "ab5894b2-0817-5b94-a109-f947327bd6d2",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "8f1e8eee-0fb7-498b-90f4-7fc47dcaa0ca",
+                  "label": "VLAN/Subnet-based Traffic Segmentation",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "vlanslashsubnet-based-traffic-segmentation"
+                }
+              }
+            ]
+          },
+          {
+            "__typename": "SpecificationEntitySection",
+            "id": "c94f1700-72e4-537b-ba12-eb09b28e7a66",
+            "section": {
+              "__typename": "SpecificationSection",
+              "id": "600afb39-8d76-4c28-bbb9-e22b513644c0",
+              "label": "VPN & SD-WAN",
+              "slug": "vpn-and-sd-wan"
+            },
+            "features": [
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "3782e7f6-d505-579e-98ff-2688f89e3cde",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "26630a61-9450-42e8-9b30-7918dae87b76",
+                  "label": "License-Free SD-WAN",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "license-free-sd-wan"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureGroup",
+                "id": "b17c10e2-6e83-55b2-aba5-e7d988f9b0d7",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "4eb9a417-7971-415c-af55-2f4ee37a5bd9",
+                  "label": "Site-to-Site VPN",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "site-to-site-vpn"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "a3eaa818-a7d1-52ba-bb94-2bad1e92fcef",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "67afc8e3-3a71-41db-8e16-51580bc2941d",
+                  "label": "Site Magic",
+                  "note": null,
+                  "parentId": "4eb9a417-7971-415c-af55-2f4ee37a5bd9",
+                  "slug": "site-to-site-vpn-site-magic"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "21361c25-0900-5331-8d02-cf66d22a67ac",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "ad31f40d-c0cb-4729-8437-d8c8114a3043",
+                  "label": "IPsec",
+                  "note": null,
+                  "parentId": "4eb9a417-7971-415c-af55-2f4ee37a5bd9",
+                  "slug": "site-to-site-vpn-ipsec"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "25a82917-203a-5b5f-91a6-b8611b010e45",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "4889ef0a-175e-488d-a9f1-efb1daf5c1a1",
+                  "label": "OpenVPN",
+                  "note": null,
+                  "parentId": "4eb9a417-7971-415c-af55-2f4ee37a5bd9",
+                  "slug": "site-to-site-vpn-openvpn"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureGroup",
+                "id": "d74f7406-e51f-5538-8583-bbde3e85b269",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "3e0913cc-6b1f-4a6a-ad51-1f9e5a497c60",
+                  "label": "VPN Server",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "vpn-server"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "384efeaa-6061-567f-9c1b-a8dec4e71438",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "258679c4-de00-4ab8-9241-1b9ec86d25f7",
+                  "label": "Identity Endpoint One-Click VPN",
+                  "note": null,
+                  "parentId": "3e0913cc-6b1f-4a6a-ad51-1f9e5a497c60",
+                  "slug": "vpn-server-identity-endpoint-one-click-vpn"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "9141c4be-eab9-5ece-9795-9f276127814d",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "0cd33a51-676c-4bb8-b907-4469dc3179d2",
+                  "label": "Teleport Zero-Configuration VPN",
+                  "note": null,
+                  "parentId": "3e0913cc-6b1f-4a6a-ad51-1f9e5a497c60",
+                  "slug": "vpn-server-teleport-zero-configuration-vpn"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "05392f9e-79c6-5c42-8bce-9b830b638b4a",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "728ffc81-6be3-4ec5-9a76-c766a408e479",
+                  "label": "WireGuard",
+                  "note": null,
+                  "parentId": "3e0913cc-6b1f-4a6a-ad51-1f9e5a497c60",
+                  "slug": "vpn-server-wireguard"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "529ce44b-b82e-5cb8-a9be-e5572c6988a4",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "324acb4f-d3b7-4cc0-8018-0669b5175cd2",
+                  "label": "OpenVPN",
+                  "note": null,
+                  "parentId": "3e0913cc-6b1f-4a6a-ad51-1f9e5a497c60",
+                  "slug": "vpn-server-openvpn"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "21f09a36-30ed-5c36-bff7-14951e9c00d4",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "55d35f55-145d-4fe7-8066-e0d6496d8e53",
+                  "label": "L2TP",
+                  "note": null,
+                  "parentId": "3e0913cc-6b1f-4a6a-ad51-1f9e5a497c60",
+                  "slug": "vpn-server-l2tp"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureGroup",
+                "id": "e5df6366-f86c-5397-bd27-a1854b8fccd3",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "64f48ce6-da52-4402-a357-ca5e19a00758",
+                  "label": "VPN Client",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "vpn-client"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "0a4f109e-d48b-5a63-82ea-9e6c150e5819",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "e9e80ce3-7fc7-4b13-9c38-07aeec28318b",
+                  "label": "OpenVPN",
+                  "note": null,
+                  "parentId": "64f48ce6-da52-4402-a357-ca5e19a00758",
+                  "slug": "vpn-client-openvpn"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "d2131736-3794-583f-bcec-75c8e789921c",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "81949b16-3a6b-45dc-826b-602f73907c91",
+                  "label": "WireGuard",
+                  "note": null,
+                  "parentId": "64f48ce6-da52-4402-a357-ca5e19a00758",
+                  "slug": "vpn-client-wireguard"
+                }
+              }
+            ]
+          },
+          {
+            "__typename": "SpecificationEntitySection",
+            "id": "9e745fc7-aa25-564f-a7ba-2300bee38765",
+            "section": {
+              "__typename": "SpecificationSection",
+              "id": "e8dcee2a-ba20-4205-b8b9-685156bf64dc",
+              "label": "Networking",
+              "slug": "networking"
+            },
+            "features": [
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "26405be0-ff72-5a62-8538-7a24ebb25921",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "3da805e7-5c6a-45ae-ac66-ab3eec438370",
+                  "label": "Multi-WAN Load Balancing",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "multi-wan-load-balancing"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "e5e0e94f-51cb-59f6-8992-d25f2a75f261",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "21dcda4f-8c3f-4088-9843-89ff152bce48",
+                  "label": "Shadow Mode (VRRP) High Availability",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "shadow-mode-vrrp-high-availability"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureGroup",
+                "id": "3252b3b9-08b4-538a-8321-3aa95f190dd4",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "985e71b0-2c98-4f8f-87c6-02aaddf07a95",
+                  "label": "Dynamic Routing",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "dynamic-routing"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "0544ced7-99ba-5893-bdee-1010d2058e51",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "97c78f00-f087-4ec3-a041-3f8b3b65e9b3",
+                  "label": "OSPF",
+                  "note": null,
+                  "parentId": "985e71b0-2c98-4f8f-87c6-02aaddf07a95",
+                  "slug": "dynamic-routing-ospf"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "4a55875e-fccc-5385-936f-e40757a72a00",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "7a698d76-f486-4fca-87e3-0be0838bcb11",
+                  "label": "BGP",
+                  "note": null,
+                  "parentId": "985e71b0-2c98-4f8f-87c6-02aaddf07a95",
+                  "slug": "dynamic-routing-bgp"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "5a5066a3-29e5-5c3f-b169-8a9f39591d67",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "89ddc45a-d5f8-4f1d-ada9-bc903fa68ed0",
+                  "label": "Advanced QoS",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "advanced-qos"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "62f73f15-0c1e-578b-8d0c-62234462531f",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "6fbbd4cb-db9d-482d-ba4c-682656a5683f",
+                  "label": "Multicast DNS (mDNS)",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "multicast-dns-mdns"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "01aef7e0-2ca0-575e-983c-74a569f78bda",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "2324bb94-6f30-49c4-9d1e-61a77d621f16",
+                  "label": "Advanced NAT (SNAT / DNAT / Masquerade / NAT Pooling / 1-to-1 NAT)",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "advanced-nat-snat-slash-dnat-slash-masquerade-slash-nat-pooling-slash-1-to-1-nat"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "d115ce9b-f293-553c-9138-3954c9fd6190",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "2be633a3-4c00-4fdc-8f55-5575bd1974c1",
+                  "label": "Integrated RADIUS Server",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "integrated-radius-server"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "b54aedff-50b5-5487-9e70-1a02b20f64a6",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "dfe2f62c-871f-4815-9ecf-b69f93d3fe08",
+                  "label": "RADIUS over TLS (RadSec)",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "radius-over-tls-radsec"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "fa77c587-b9fb-5a66-a478-fbc7adfe0959",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "ea73f8c1-0647-4403-87c8-37c6546342f9",
+                  "label": "Additional Internet Failover with UniFi LTE Backup",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "additional-internet-failover-with-unifi-lte-backup"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "58667834-9b8c-5c21-86e0-d4c735875b80",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "777714b8-f56f-4a62-b037-592129023860",
+                  "label": "Internet Quality and Outage Reporting",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "internet-quality-and-outage-reporting"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "c9427902-8e5d-55bb-bba8-83da420600c0",
+                "note": null,
+                "value": "4,000",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "3e8f7bb7-10de-4a32-8a30-260daaed11a6",
+                  "label": "MAC Address Table Size",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "mac-address-table-size"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "6c8b18c9-a259-5fee-961f-861061cc35d6",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "23fdd1d7-455b-4f1e-ae20-43f262c2b587",
+                  "label": "Policy-based WAN and VPN Routing",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "policy-based-wan-and-vpn-routing"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "f2c8b9c9-7ba5-5af4-bd28-373852984ff2",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "ae4e2d7d-a8db-4d25-9470-f0b38ae6d727",
+                  "label": "Customizable DHCP Server",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "customizable-dhcp-server"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "d575de61-e9b8-5e87-b75a-296ee19456ed",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "3c65d078-0d13-47c8-af66-3bbadf905ecb",
+                  "label": "IPv6 ISP Support",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "ipv6-isp-support"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "006feb42-18ff-50e3-a92c-5cc267563ad1",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "253743bb-9450-40a4-b3c4-94a8a9936d24",
+                  "label": "IGMP Proxy",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "igmp-proxy"
+                }
+              }
+            ]
+          },
+          {
+            "__typename": "SpecificationEntitySection",
+            "id": "71f6a9c7-08b1-5814-b498-1bfe5772fb83",
+            "section": {
+              "__typename": "SpecificationSection",
+              "id": "2c20193f-b3ad-436c-81d0-77e0e5ae2b84",
+              "label": "Hardware",
+              "slug": "hardware"
+            },
+            "features": [
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "2eebf5ac-2acd-534a-9c92-14fd8e293b3c",
+                "note": null,
+                "value": "(1) 3.5\" NVR HDD bay\nBuilt-in 128 GB SSD for Faster Experience",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "ba1a6cb4-7a46-4556-ae65-e921ea0fc235",
+                  "label": "NVR Storage",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "nvr-storage"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "a3e246b4-43a6-5bd1-a579-c76a599cabbf",
+                "note": null,
+                "value": "180W",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "1acdbcad-24c5-4465-b6b9-0bbf6d02d62c",
+                  "label": "PoE Budget",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "poe-budget"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureGroup",
+                "id": "ad7d01c5-606f-5d7e-aa74-98a622ec6fe4",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "9bbdd427-72d4-42b2-a321-5baca525d1a3",
+                  "label": "Max. PoE Wattage per Port by PSE",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "maxdot-poe-wattage-per-port-by-pse"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "0b21a666-9376-5a3d-a228-eb08a3ec337d",
+                "note": null,
+                "value": "15.4W",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "d1df90cf-2155-4c6c-bbcb-a21c456d07dc",
+                  "label": "PoE",
+                  "note": null,
+                  "parentId": "9bbdd427-72d4-42b2-a321-5baca525d1a3",
+                  "slug": "maxdot-poe-wattage-per-port-by-pse-poe"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "5c011f59-d0ac-5999-86ea-93cc8ab319b4",
+                "note": null,
+                "value": "30W",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "a98885d2-a0da-431d-b786-d9506fd3aa85",
+                  "label": "PoE+",
+                  "note": null,
+                  "parentId": "9bbdd427-72d4-42b2-a321-5baca525d1a3",
+                  "slug": "maxdot-poe-wattage-per-port-by-pse-poeplus"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "24b0accc-5cd5-52f9-ba63-f3ac22932e4e",
+                "note": null,
+                "value": "PoE: 44-57V\nPoE+: 50-57V",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "496fd39c-fbc7-4b0f-905c-6a846fd1e633",
+                  "label": "Voltage Range PoE Mode",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "voltage-range-poe-mode"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "d4193b57-b631-5184-800b-deddc492e0fc",
+                "note": null,
+                "value": "50W (Excluding PoE Output)",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "97a1ca5c-3405-4476-b01a-7e1564f38ea6",
+                  "label": "Max. Power Consumption",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "maxdot-power-consumption"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "4a1aec47-8194-5141-9de9-5191bcff6bf5",
+                "note": null,
+                "value": "(1) Universal AC input, 100—240V AC, 4.4A Max., 50/60 Hz\n(1) USP-RPS DC input, 52V DC, 3.94A",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "42fce561-a4c1-4dd2-a7a1-150c4ce7d759",
+                  "label": "Power Method",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "power-method"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "014a6344-e5b5-53fd-aef1-d93638e027b8",
+                "note": null,
+                "value": "AC/DC, internal, 240W",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "4a98dcf7-7781-42c9-ba9d-d24a1a86dfaa",
+                  "label": "Power Supply",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "power-supply"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "6fbdb94c-af38-5dfc-b51e-e8cbfd073688",
+                "note": null,
+                "value": "100—240V AC",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "e4f91bc0-6286-4b4f-9c51-5dcb64f51ae9",
+                  "label": "Supported Voltage Range",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "supported-voltage-range"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "636b9dee-0f88-523d-86dd-df884035b651",
+                "note": null,
+                "value": "Quad-core ARM® Cortex®-A57 at 1.7 GHz",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "d244e600-6bc0-4d3e-8cbb-c4e2c6f85997",
+                  "label": "Processor",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "processor"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "3b51d948-b7aa-559e-83aa-d1eed1114eab",
+                "note": null,
+                "value": "4 GB",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "701a86f7-1110-4816-b8b7-7ef6c4b253b2",
+                  "label": "System Memory",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "system-memory"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "17840f64-ef4b-5553-a00f-e184a12e4963",
+                "note": null,
+                "value": "16 GB eMMC\n128 GB SSD (Integrated)",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "69c175d4-5835-4281-95da-f1aa1cedfbce",
+                  "label": "On-board Storage",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "on-board-storage"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "b9440cdb-a683-5c10-8bd6-d5d099f4cd6c",
+                "note": null,
+                "value": "5 kg (10.9 lb)",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "5f2e2fdc-55ce-4666-a9a0-9656242d7573",
+                  "label": "Weight",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "weight"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "4efc1662-d48f-59c1-aa89-ab92d34acc8a",
+                "note": null,
+                "value": "Aluminium CNC, SGCC steel",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "399a6260-845f-4a2e-80e3-b69fb0589b33",
+                  "label": "Enclosure Material",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "enclosure-material"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "a687a689-c3cb-5dbd-bedd-56f6dfa64fa0",
+                "note": null,
+                "value": "SGCC steel",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "d544c974-6009-4618-a14b-7b7fb36b1394",
+                  "label": "Mount Material",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "mount-material"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "a62b11d5-ee28-5b21-9bb7-79dae1c8ee6a",
+                "note": null,
+                "value": "1.3\" touchscreen",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "b36fae00-683f-4e29-9c40-7f0e1104a094",
+                  "label": "LCM Display",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "lcm-display"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "55c87913-2a9a-5466-ba72-d521f077ee8c",
+                "note": null,
+                "value": "Ethernet\nBluetooth",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "746b513f-6eaa-4cce-9604-b97c9d688091",
+                  "label": "Management",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "management"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureGroup",
+                "id": "a4dd3e71-2506-567c-b449-51cd6186725f",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "3db260ea-93ca-4e42-9e91-3c85a6be79c2",
+                  "label": "LEDs",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "leds"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "507960a8-9ef3-511b-93f9-5100fb8aeaf7",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "01cf5486-f549-4a65-94d8-9cc5fef9ebf5",
+                  "label": "Ethernet",
+                  "note": null,
+                  "parentId": "3db260ea-93ca-4e42-9e91-3c85a6be79c2",
+                  "slug": "leds-ethernet"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "bec821d1-d98c-5cb1-9dca-ce6d90d6161a",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "a7b0dec7-fb13-45a7-8f59-f45895ffbe83",
+                  "label": "SFP+",
+                  "note": null,
+                  "parentId": "3db260ea-93ca-4e42-9e91-3c85a6be79c2",
+                  "slug": "leds-sfpplus"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "f397c1ca-aefc-5c52-81ba-974a224d42f3",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "8c5d88f3-d6f2-47c6-8229-dd5c5e9a442f",
+                  "label": "RPS",
+                  "note": null,
+                  "parentId": "3db260ea-93ca-4e42-9e91-3c85a6be79c2",
+                  "slug": "leds-rps"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "fe2088c3-d5c1-5473-a0da-a7debb66e502",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "7f19c65c-5912-4e53-b03a-0ae4fb6288bd",
+                  "label": "PSU",
+                  "note": null,
+                  "parentId": "3db260ea-93ca-4e42-9e91-3c85a6be79c2",
+                  "slug": "leds-psu"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "6d221515-5082-500a-817f-14324e0b181d",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "f339e1e6-d717-4fdc-8b9b-8609ab86e96c",
+                  "label": "HDD",
+                  "note": null,
+                  "parentId": "3db260ea-93ca-4e42-9e91-3c85a6be79c2",
+                  "slug": "leds-hdd"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "b60fe58d-6dde-5edf-acee-a89a508179a5",
+                "note": null,
+                "value": "(1) Factory-reset",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "ef189179-79de-49c4-9841-3d00a9aa4ca2",
+                  "label": "Button",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "button"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "993d258a-fe18-5f98-a6c1-15a0dcf8c216",
+                "note": null,
+                "value": "Air: ± 15kV, contact: ± 8kV",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "b36ee23e-280f-4942-925a-a77bc01203f5",
+                  "label": "ESD/EMP Protection",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "esdslashemp-protection"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "b2644f44-b629-5517-bd7e-bc04b3306355",
+                "note": null,
+                "value": "-10 to 40° C (14 to 104° F)",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "e71e6b10-bb6f-4b21-909c-4c9a4a2b9ccb",
+                  "label": "Ambient Operating Temperature",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "ambient-operating-temperature"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "a52d251c-6270-517c-a9cf-a8e3ba6d149f",
+                "note": null,
+                "value": "5 to 95% noncondensing",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "89aa2951-0f97-4066-9daf-318ca0ca1127",
+                  "label": "Ambient Operating Humidity",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "ambient-operating-humidity"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryFlag",
+                "id": "fa4e9b11-aa49-53fd-8c51-9c7f81afc8de",
+                "note": null,
+                "flag": "True",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "478bf96f-40b7-44a1-bec1-ea611b0cf5aa",
+                  "label": "NDAA Compliant",
+                  "note": "",
+                  "parentId": null,
+                  "slug": "ndaa-compliant"
+                }
+              },
+              {
+                "__typename": "SpecificationEntitySectionFeatureEntryText",
+                "id": "8ebb60cb-d8f0-5090-a8d0-7d49e0c45f07",
+                "note": null,
+                "value": "CE, FCC, IC",
+                "feature": {
+                  "__typename": "SpecificationSectionFeature",
+                  "id": "176e05d3-8217-428b-b271-58cf5efffc2d",
+                  "label": "Certifications",
+                  "note": null,
+                  "parentId": null,
+                  "slug": "certifications"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "documents": [
+        {
+          "__typename": "ProductDocument",
+          "id": "cf769e0c-0e00-40e0-b6fa-0a1a1c52d454",
+          "type": "Datasheet",
+          "url": "https://dl.ui.com/ds/udm_se_ds.pdf"
+        },
+        {
+          "__typename": "ProductDocument",
+          "id": "7db4cadd-6e35-41c3-bd4b-41a41c8c741b",
+          "type": "InstallationGuide",
+          "url": "https://dl.ui.com/qig/udm-se"
+        }
+      ],
+      "datasheet": null
+    }
+  },
+  "__N_SSP": true
+}

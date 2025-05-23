@@ -25,7 +25,7 @@ class Ubiquiti:
         print(f"\nFetching data from: {url}")
         try:
             response = requests.get(url, timeout=10)
-            response.raise_for_status()  # Raises an HTTPError for bad responses (4XX or 5XX)
+            response.raise_for_status()
             try:
                 parsed_data = response.json()
                 print(f"Successfully fetched and parsed JSON from {url}")
@@ -36,13 +36,16 @@ class Ubiquiti:
                 return None
         except requests.exceptions.HTTPError as http_err:
             print(f"HTTP error occurred while fetching {url}: {http_err}")
+            return None
         except requests.exceptions.ConnectionError as conn_err:
             print(f"Connection error occurred while fetching {url}: {conn_err}")
+            return None
         except requests.exceptions.Timeout as timeout_err:
             print(f"Timeout error occurred while fetching {url}: {timeout_err}")
+            return None
         except requests.exceptions.RequestException as req_err:
             print(f"An error occurred while fetching {url}: {req_err}")
-        return None
+            return None
 
     def extract_product_slugs(self, top_level_categories: dict) -> list:
         """
@@ -126,58 +129,132 @@ class Ubiquiti:
 
         return generated_product_urls
 
-    def parse_product_data(self, original_structure: tuple, product_json_data: dict) -> dict:
-        """
-        Parses the product JSON data and returns a structured dictionary.
-        :param product_json_data: The JSON data for a single product.
-        :return: A structured dictionary containing the parsed product data.
-        """
-        product_data = product_json_data['pageProps']['product']
-
-        for data_point in self.data_points:
-            if data_point in product_data:
-                original_structure[data_point] = product_data[data_point]
+    def _get_value_from_path(self, source_dict: dict, path: list, default=None):
+        """Helper to safely get a value from a nested dictionary using a list of keys."""
+        current = source_dict
+        for key in path:
+            if isinstance(current, dict) and key in current:
+                current = current[key]
+            elif isinstance(current, list) and isinstance(key, int) and 0 <= key < len(current):
+                current = current[key] # Access list element by index
             else:
-                print(f"Warning: Data point '{data_point}' not found in product data.")
+                return default
+        return current
 
-        print(original_structure)
-        return {}
+    def parse_product_data(self, data_to_populate: dict, product_json_data: dict) -> dict:
+        """
+        Parses product_json_data based on self.data_points and populates data_to_populate.
+        :param data_to_populate: The dictionary to add parsed data to (e.g., {'url': '...'}).
+        :param product_json_data: The JSON data for a single product.
+        :return: The populated data_to_populate dictionary.
+        """
+        if not product_json_data or not isinstance(product_json_data, dict):
+            print("Warning: product_json_data is empty or not a dictionary for parsing.")
+            return data_to_populate
+
+        # Base path for most product information
+        product_info_root = self._get_value_from_path(product_json_data, ['pageProps', 'product'])
+        if not product_info_root or not isinstance(product_info_root, dict):
+            print("Warning: 'pageProps.product' path not found or not a dict in product_json_data.")
+            return data_to_populate
+
+        for dp_config in self.data_points:
+            output_key = dp_config.get("output_key")
+            dp_type = dp_config.get("type", "direct_path") # Default to direct_path
+            default_value = dp_config.get("default") # Will be None if not specified
+
+            if not output_key:
+                print(f"Warning: Skipping data point due to missing 'output_key': {dp_config}")
+                continue
+
+            value_to_assign = default_value # Initialize with default
+
+            if dp_type == "direct_path":
+                path = dp_config.get("path")
+                if path and isinstance(path, list):
+                    value_to_assign = self._get_value_from_path(product_info_root, path, default_value)
+                else:
+                    print(f"Warning: Skipping direct_path for '{output_key}' due to missing/invalid 'path'.")
+
+            elif dp_type == "technical_spec":
+                spec_slug_to_find = dp_config.get("spec_slug")
+                if spec_slug_to_find:
+                    item_found = False
+                    tech_spec_node = self._get_value_from_path(product_info_root, ["technicalSpecification"])
+
+                    if isinstance(tech_spec_node, dict):
+                        sections = self._get_value_from_path(tech_spec_node, ["sections"], [])
+                        for section in sections:
+                            if item_found: break
+                            if not isinstance(section, dict): continue
+
+                            # Ensure the section is of the correct type if necessary, e.g., by checking section.get("__typename")
+                            # For now, we assume all sections in the list are relevant or structured similarly.
+
+                            features = self._get_value_from_path(section, ["features"], [])
+                            for feature_item in features:
+                                if not isinstance(feature_item, dict): continue
+
+                                # feature_item is like:
+                                # { "__typename": "SpecificationEntitySectionFeatureEntryText",
+                                #   "value": "5 kg (10.9 lb)",
+                                #   "feature": { "__typename": "SpecificationSectionFeature", "slug": "weight" } }
+
+                                inner_feature_details = self._get_value_from_path(feature_item, ["feature"])
+                                if isinstance(inner_feature_details, dict) and \
+                                   self._get_value_from_path(inner_feature_details, ["slug"]) == spec_slug_to_find:
+                                    # The actual value is in feature_item['value']
+                                    value_to_assign = self._get_value_from_path(feature_item, ["value"], default_value)
+                                    item_found = True
+                                    break # Found the specific feature, break from features loop
+
+                    if not item_found:
+                        # This message can be noisy if specs are often missing, consider logging level or removing
+                        # print(f"Info: Technical spec with slug '{spec_slug_to_find}' not found for '{output_key}'. Using default.")
+                        pass # value_to_assign remains default_value
+                else:
+                    print(f"Warning: Skipping technical_spec for '{output_key}' due to missing 'spec_slug'.")
+
+            else:
+                print(f"Warning: Unknown data point type '{dp_type}' for '{output_key}'.")
+
+            if
+
+            data_to_populate[output_key] = value_to_assign
+
+        return data_to_populate
 
     def get_product_data(self, product_info: tuple) -> dict:
         """
-        Fetches and returns the JSON data for a single product.
-        :param product_info: A tuple containing the product slug and a dict with its URL.
-                             Example: ('udr', {'url': 'https://.../udr.json'})
-        :return: A dictionary containing the parsed JSON data for the product,
-                 or an empty dictionary if fetching or parsing fails.
+        Fetches product JSON, then parses it to populate product details.
+        :param product_info: A tuple (slug, details_dict), e.g., ('udr', {'url': '...'}).
+        :return: The details_dict populated with parsed data.
         """
         if not isinstance(product_info, tuple) or len(product_info) != 2:
-            print("Error: Invalid product_info format. Expected a tuple of (slug, {url: ...}).")
-            return {}
+            print("Error: Invalid product_info format. Expected a tuple of (slug, dict).")
+            return {} # Or raise an error
 
-        slug, data = product_info
+        slug, product_details_dict = product_info # product_details_dict is like {'url': '...'}
 
-        if not isinstance(data, dict) or 'url' not in data:
-            print(f"Error: Invalid product data for slug '{slug}'. 'url' key missing or data not a dict.")
-            return {}
+        if not isinstance(product_details_dict, dict) or 'url' not in product_details_dict:
+            print(f"Error: Invalid product_details_dict for slug '{slug}'. 'url' key missing or not a dict.")
+            return product_details_dict # Return as is, or an empty dict
 
-        product_url = data['url']
+        product_url = product_details_dict['url']
         print(f"\nFetching product data for slug '{slug}' from URL: {product_url}")
 
-        # Use the existing fetch_single_json method to get the data
         product_json_data = self.fetch_single_json(product_url)
 
         if product_json_data:
-            # At this point, product_json_data holds the parsed JSON.
-            # You can add further parsing logic here if needed.
-            print(f"Successfully retrieved and parsed data for product: {slug}")
-
-            new_product_structure = self.parse_product_data(data, product_json_data)  # Call the parsing method
-
-            return {} #product_json_data
+            print(f"Successfully retrieved JSON for product: {slug}. Now parsing...")
+            # Pass product_details_dict to be populated
+            populated_details = self.parse_product_data(product_details_dict, product_json_data)
+            return populated_details
         else:
-            print(f"Failed to retrieve data for product: {slug}")
-            return {}
+            print(f"Failed to retrieve or parse JSON data for product: {slug}")
+            # Return the original dict (with just URL) if fetching/parsing failed,
+            # so it still has the URL and other pre-existing keys.
+            return product_details_dict
 
 # Example of how to use the class if this script is run directly
 if __name__ == "__main__":
