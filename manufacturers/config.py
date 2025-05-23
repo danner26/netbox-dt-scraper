@@ -3,7 +3,12 @@ MANUFACTURERS_DATA = {
     "ubiquiti": {
         "module_name": "ubiquiti", # Corresponds to ubiquiti.py
         "device_info_urls": [
-            "https://techspecs.ui.com/_next/data/EAllru7-KUKtVLnVBqKwQ/unifi/cloud-gateways.json"        ]
+            "https://techspecs.ui.com/_next/data/EAllru7-KUKtVLnVBqKwQ/unifi/cloud-gateways.json"
+        ],
+        "data_points": [
+            "title",
+            "shortDescription"
+        ]
     },
 }
 

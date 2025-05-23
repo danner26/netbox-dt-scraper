@@ -10,6 +10,7 @@ def main():
         module_name = config.get("module_name")
         class_name = module_name.capitalize()
         device_urls = config.get("device_info_urls")
+        data_points = config.get("data_points")
 
         if not all([module_name, class_name, device_urls]):
             print(f"Warning: Missing configuration for {manufacturer_key}. Skipping.")
@@ -27,7 +28,7 @@ def main():
             print(f"Successfully found class: {class_name} in {module_path}")
 
             # Instantiate the class
-            scraper_instance = ScraperClass(device_info_urls=device_urls, manufacturer_name=manufacturer_key)
+            scraper_instance = ScraperClass(device_info_urls=device_urls, manufacturer_name=manufacturer_key, data_points=data_points)
             print(f"Successfully instantiated {class_name} for {manufacturer_key}")
 
             # Call the method on the instance
@@ -47,21 +48,20 @@ def main():
         except Exception as e:
             print(f"An unexpected error occurred while processing {manufacturer_key}: {e}")
 
-        try:
-            for manu, products in product_dict.items():
-                if products:
-                    for product in products.items():
-                        print(f"  {product}")
-                        # Call the method on the instance
-                        product_data = scraper_instance.get_product_data(product)
-                        if product_data:
-                            print(f"Retrieved {product_data}")
-                        else:
-                            print(f"No product data retrieved for {product[0]}")
-                else:
-                    print(f"\n{manu.capitalize()}: No URLs found.")
-        except Exception as e:
-            print(f"An error occurred while printing product URLs: {e}")
+        # try:
+        for manu, products in product_dict.items():
+            if products:
+                for product in products.items():
+                    # Call the method on the instance
+                    product_data = scraper_instance.get_product_data(product)
+                    if product_data:
+                        print(f"Retrieved {product_data}")
+                    else:
+                        print(f"No product data retrieved for {product[0]}")
+            else:
+                print(f"\n{manu.capitalize()}: No URLs found.")
+        # except Exception as e:
+        #     print(f"An error occurred while printing product URLs: {e}")
 
     print("\n--- All Product URLs ---")
     for manu, products in product_dict.items():

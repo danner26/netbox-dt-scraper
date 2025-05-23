@@ -6,7 +6,7 @@ import json
 # from manufacturers.config import MANUFACTURER, DEVICE_INFO_URLS # This line would be removed or handled differently
 
 class Ubiquiti:
-    def __init__(self, device_info_urls: list, manufacturer_name: str = "Ubiquiti"):
+    def __init__(self, device_info_urls: list, data_points: list, manufacturer_name: str = "Ubiquiti"):
         """
         Initializes the Ubiquiti.
         :param device_info_urls: A list of URLs to fetch category/device information from.
@@ -14,6 +14,7 @@ class Ubiquiti:
         """
         self.device_info_urls = device_info_urls
         self.manufacturer_name = manufacturer_name
+        self.data_points = data_points
         print(f"Initialized {self.manufacturer_name}Scraper with {len(self.device_info_urls)} URLs.")
 
     def fetch_single_json(self, url: str):
@@ -125,13 +126,58 @@ class Ubiquiti:
 
         return generated_product_urls
 
-    def get_product_data(self, product) -> dict:
+    def parse_product_data(self, original_structure: tuple, product_json_data: dict) -> dict:
         """
-        Placeholder for a method to fetch product data from the generated URLs.
-        This method can be implemented later as needed.
+        Parses the product JSON data and returns a structured dictionary.
+        :param product_json_data: The JSON data for a single product.
+        :return: A structured dictionary containing the parsed product data.
         """
-        print("get_product_data() method is not yet implemented.")
+        product_data = product_json_data['pageProps']['product']
+
+        for data_point in self.data_points:
+            if data_point in product_data:
+                original_structure[data_point] = product_data[data_point]
+            else:
+                print(f"Warning: Data point '{data_point}' not found in product data.")
+
+        print(original_structure)
         return {}
+
+    def get_product_data(self, product_info: tuple) -> dict:
+        """
+        Fetches and returns the JSON data for a single product.
+        :param product_info: A tuple containing the product slug and a dict with its URL.
+                             Example: ('udr', {'url': 'https://.../udr.json'})
+        :return: A dictionary containing the parsed JSON data for the product,
+                 or an empty dictionary if fetching or parsing fails.
+        """
+        if not isinstance(product_info, tuple) or len(product_info) != 2:
+            print("Error: Invalid product_info format. Expected a tuple of (slug, {url: ...}).")
+            return {}
+
+        slug, data = product_info
+
+        if not isinstance(data, dict) or 'url' not in data:
+            print(f"Error: Invalid product data for slug '{slug}'. 'url' key missing or data not a dict.")
+            return {}
+
+        product_url = data['url']
+        print(f"\nFetching product data for slug '{slug}' from URL: {product_url}")
+
+        # Use the existing fetch_single_json method to get the data
+        product_json_data = self.fetch_single_json(product_url)
+
+        if product_json_data:
+            # At this point, product_json_data holds the parsed JSON.
+            # You can add further parsing logic here if needed.
+            print(f"Successfully retrieved and parsed data for product: {slug}")
+
+            new_product_structure = self.parse_product_data(data, product_json_data)  # Call the parsing method
+
+            return {} #product_json_data
+        else:
+            print(f"Failed to retrieve data for product: {slug}")
+            return {}
 
 # Example of how to use the class if this script is run directly
 if __name__ == "__main__":
